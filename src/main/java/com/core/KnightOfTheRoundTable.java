@@ -1,10 +1,12 @@
 package com.core;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class KnightOfTheRoundTable implements Knight{
 	
-	Logger logger = Logger.getLogger(getClass());
+	Logger logger = LoggerFactory.getLogger(getClass());
+
 	private String name;
 	private HolyGrailQuest quest;
 	private Minstrel minstrel;

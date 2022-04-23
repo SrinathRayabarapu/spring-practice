@@ -1,9 +1,10 @@
 package com.core;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Minstrel {
-	Logger logger = Logger.getLogger(getClass());
+	Logger logger = LoggerFactory.getLogger(getClass());
 	
 	public void singBefore(){
 		logger.info("Singing before knight song....");
