@@ -1,18 +1,16 @@
 package com.spring.mvc.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
-
-import javax.servlet.http.HttpServletRequest;
-
+import com.spring.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.spring.model.User;
+import javax.servlet.http.HttpServletRequest;
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 @Controller
 public class HomeController {
