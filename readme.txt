@@ -2,6 +2,6 @@
 
 Description:
 This project has below modules -
-1. Spring MVC
+1. Spring core and other modules
 
-Note: Spring Core and other modules are part of SpringBootTest project
+TODO : Revisit and make all the programs runnable

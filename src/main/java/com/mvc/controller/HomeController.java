@@ -1,6 +1,6 @@
-package com.spring.mvc.controller;
+package com.mvc.controller;
 
-import com.spring.model.User;
+import com.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
