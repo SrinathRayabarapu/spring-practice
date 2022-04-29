@@ -1,4 +1,4 @@
-package com.core.config;
+package com.core.configuration;
 
 import com.core.bean.ICoach;
 import com.core.components.SwimCoach;
