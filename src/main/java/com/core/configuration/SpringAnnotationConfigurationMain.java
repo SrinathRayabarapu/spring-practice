@@ -20,7 +20,7 @@ public class SpringAnnotationConfigurationMain {
         //tennisCoach.getFortune();
 
         //this is without component scan
-        ICoach swimCoach = applicationContext.getBean("swimCoach", ICoach.class);
+        ICoach swimCoach = applicationContext.getBean(ICoach.class);
         swimCoach.doWorkOut();
         swimCoach.getFortune();
 

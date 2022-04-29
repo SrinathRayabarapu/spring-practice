@@ -6,7 +6,6 @@ import com.core.services.FortuneService;
 import com.core.services.SadFortuneService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 /**
  * class to configure java based configurations and package scans
@@ -15,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 //@ComponentScan("com.springboot.components")
-@PropertySource("classpath:mySpringData.properties")
+//@PropertySource("classpath:mySpringData.properties")
 public class SportConfig {
 	
 	//defining bean for sad fortune service
