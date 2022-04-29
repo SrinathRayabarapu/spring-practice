@@ -1,19 +1,8 @@
 package com.core.dao;
 
-import com.model.Employee;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.query.Query;
-import org.springframework.dao.DataAccessException;
-import org.springframework.orm.hibernate3.HibernateCallback;
-import org.springframework.orm.hibernate3.HibernateTemplate;
-
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
+// TODO -
 public class EmployeeDAO {
+/*
 
     private HibernateTemplate hibernateTemplate;
 
@@ -72,5 +61,6 @@ public class EmployeeDAO {
         // TODO
         return null;
     }
+*/
 
 }

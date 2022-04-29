@@ -1,7 +1,9 @@
 package com.core.bean;
 
 import com.core.services.FortuneService;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class CricketCoach implements ICoach {
 	
 	//reference name should be same as mentioned in the applicationContext.xml
@@ -13,7 +15,7 @@ public class CricketCoach implements ICoach {
 	private String userValue;
 	
 	public CricketCoach() {
-		System.out.println("CricketCoach() : constructor with no-arg");
+		log.info("Default constructor called");
 	}
 	
 	public void setFortuneService(FortuneService fortuneService) {
@@ -23,7 +25,7 @@ public class CricketCoach implements ICoach {
 	
 	@Override
 	public void doWorkOut() {
-		System.out.println("CricketCoach() : Hit a Century right now..!!");
+		log.info("CricketCoach : Hit a SIX please!");
 	}
 
 	@Override

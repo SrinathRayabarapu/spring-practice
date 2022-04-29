@@ -11,18 +11,23 @@ public class SpringAnnotationConfigurationMain {
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SportConfig.class);
+        log.info("Initialised annotation based component configuration");
 
-        System.out.println("Annotation based component configuration");
+        // get a bean based on type
+        IVehicle vehicle = applicationContext.getBean(IVehicle.class);
+        vehicle.drive();
 
-        //this is with component scan - @Qualifier used here
-        //ICoach tennisCoach = applicationContext2.getBean("tennisCoach", ICoach.class);
-        //tennisCoach.doWorkOut();
-        //tennisCoach.getFortune();
+        // mention bean name(method name at which @Bean is defined) when more than one bean classes are
+        // declared with same type
+        ICoach coach = applicationContext.getBean("cricketCoach", ICoach.class);
+        coach.doWorkOut();
 
-        //this is without component scan
-        ICoach swimCoach = applicationContext.getBean(ICoach.class);
-        swimCoach.doWorkOut();
-        swimCoach.getFortune();
+
+        applicationContext = new AnnotationConfigApplicationContext(ComponentsConfiguration.class);
+        log.info("Initialised annotation based component configuration");
+
+        vehicle = applicationContext.getBean(IVehicle.class);
+        vehicle.drive();
 
     }
 

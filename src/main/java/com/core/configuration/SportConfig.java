@@ -1,32 +1,32 @@
 package com.core.configuration;
 
+import com.core.bean.CricketCoach;
 import com.core.bean.ICoach;
 import com.core.components.SwimCoach;
-import com.core.services.FortuneService;
-import com.core.services.SadFortuneService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * class to configure java based configurations and package scans
- * 
+ * Configuration class which define the beans
+ *
  * @author Srinath.Rayabarapu
  */
 @Configuration
-//@ComponentScan("com.springboot.components")
-//@PropertySource("classpath:mySpringData.properties")
 public class SportConfig {
-	
-	//defining bean for sad fortune service
-	@Bean
-	public FortuneService sadFortuneService() {
-		return new SadFortuneService();
-	}
-	
-	//define bean for our swim coach AND inject dependency
+
 	@Bean
 	public ICoach swimCoach() {
-		return new SwimCoach(sadFortuneService());
+		return new SwimCoach();
 	}
-	
+
+	@Bean
+	public ICoach cricketCoach() {
+		return new CricketCoach();
+	}
+
+	@Bean
+	public IVehicle getVehicle() {
+		return new Bus();
+	}
+
 }

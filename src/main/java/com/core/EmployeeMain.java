@@ -1,12 +1,5 @@
 package com.core;
 
-import com.core.dao.EmployeeDAO;
-import com.model.Employee;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.List;
-
 /**
  * Hibernate with Spring Example
  *
@@ -14,7 +7,7 @@ import java.util.List;
  **/
 public class EmployeeMain {
     public static void main(String[] args) {
-
+/*
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Employee employeeEntity = new Employee();
@@ -38,7 +31,7 @@ public class EmployeeMain {
 //        for (Employee emp1 : empResultList) {
 //            System.out.println("Employe  ::" + emp1.getName());
 //        }
-
+ */
     }
 
 }

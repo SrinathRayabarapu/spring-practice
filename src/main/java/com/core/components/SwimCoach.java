@@ -2,12 +2,14 @@ package com.core.components;
 
 import com.core.bean.ICoach;
 import com.core.services.FortuneService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 
 /**
  * java based configurations
  * 
  */
+@Slf4j
 public class SwimCoach implements ICoach {
 	
 	@Value("${data.emailId}")
@@ -21,10 +23,14 @@ public class SwimCoach implements ICoach {
 	public SwimCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
-	
+
+	public SwimCoach() {
+		log.info("Default constructor called");
+	}
+
 	@Override
 	public void doWorkOut() {
-		System.out.println(getTeam()+ ", let's swim today.. 10 KMS!. Email me once you are done : " + getEmailId());
+		log.info("Swim coach is doing the workout!!");
 	}
 
 	@Override
