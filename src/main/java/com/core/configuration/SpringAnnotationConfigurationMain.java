@@ -17,8 +17,7 @@ public class SpringAnnotationConfigurationMain {
         IVehicle vehicle = applicationContext.getBean(IVehicle.class);
         vehicle.drive();
 
-        // mention bean name(method name at which @Bean is defined) when more than one bean classes are
-        // declared with same type
+        // like @Qualifier - mention bean method name when more same types are present
         ICoach coach = applicationContext.getBean("cricketCoach", ICoach.class);
         coach.doWorkOut();
 

@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component
+@Component //by default component name is "car" - first letter is small
 public class Car implements IVehicle {
 
-    @Autowired
-    @Qualifier("smallEngine") //tell which bean to use
+    @Autowired //uses the bean type by default
+    @Qualifier("smallEngine") //uses the bean name
     IEngine engine;
 
     public Car() {
